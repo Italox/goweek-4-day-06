@@ -12,7 +12,7 @@ module.exports = {
         /*
             envia um evento chamado "tweet" contendo o tweet
         */
-        req.io.emit('tweet', tweet);
+        req.io.emit('like', tweet);
 
         return res.json(tweet);
     },
